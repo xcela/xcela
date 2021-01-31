@@ -1,0 +1,409 @@
+/* stylelint-disable*/
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,div,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,div{display:block}html{line-height:1}body{line-height:inherit}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+/* stylelint-enable */
+
+/* Begin site styles below */
+
+/*Base*/
+html {
+  font-size: 1em;
+  line-height: inherit;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  color: black;
+  margin: 2em;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 2em;
+  max-width: 37em;
+  overflow-wrap: break-word;
+  background-color: blue;
+}
+
+
+article {
+  background-color:white;
+  padding: 1em;
+  border: 5px double blue;
+  margin-top:1em;
+  margin-bottom:1em;
+}
+
+header {
+  color: white;
+  margin-top: 2em;
+  background-color: blue;
+  padding: 1em;
+  text-transform: uppercase;
+  text-align: center;
+  /*font-size:1.1em; font-family: Times; font-weight: bold; font-style: italic;*/
+}
+
+hr {
+  margin-top: 1.5em;
+}
+
+h1 {
+  color: white;
+  margin-top: 1.5em;
+  background-color: blue;
+  padding: 1em;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+
+h2 {
+  color: white;
+  margin-top: 2em;
+  margin-bottom: 1.5em;
+  background-color: blue;
+  padding: 1em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+h3, h5 { font-size:1.1em; text-align:center;}
+
+h3 {
+  color: black;
+  margin: 1em;
+  margin-top: 1em;
+  font-weight: bold;
+  text-decoration: underline;  
+    font-family: serif;
+    font-style:italic;
+}
+
+h4 {
+  margin: 1.75em;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+  text-decoration: underline;
+font-size:1em;
+}
+
+h5 {    color: black;
+  margin: 1em;
+  margin-top: 1em;
+    padding-left: 1em;
+text-align: center;
+  font-weight: bold;
+  text-decoration: underline;  
+    text-transform: uppercase;
+        font-family: serif;
+    font-style:italic;
+    ;}  
+
+ul hr { width: 35%; margin-left: 2em; }
+
+p {
+  margin: 1em;
+  padding-left: 1.75em;
+}
+
+ol, ul, h3, h4{ padding-left: 1em; }
+
+subfooter {
+  font-size: 0.75em;
+  margin-left: 43.5%;
+  color: gray;
+}
+div.recipe subfooter {
+  margin-left: 41.5%;
+}
+
+
+/* TEXT DECORATION */
+i {
+  font-style: italic;
+  font-size: 0.925em;
+}
+strong {
+  font-weight: bold;
+}
+
+ul {
+  list-style: none; /* Remove default bullets */
+}
+ul li::before {
+  content: "• "; 
+  font-weight:bold;
+  color: black; 
+  margin-top: 0.5em;
+  margin-left: 2em;
+}
+
+ul complete li::before {color:blue;}
+ul wip li::before {color:lightgreen;}
+ul planned li::before {color:red;}
+
+ul abandoned li::before {color:red;}
+
+
+blockquote {
+  color: darkgray;
+  font-family: sans-serif;
+  font-style: italic;
+  margin: 1em;
+}
+
+bold {
+  font-weight: bold;
+}
+
+u {
+  text-decoration: underline;
+}
+
+em {
+  font-style: italic;
+  color: grey;
+}
+
+p.dl {
+  margin-right: 1em;
+  text-align: right;
+  font-size: 0.925em;
+  color: darkgray;
+}
+
+/*HYPERLINKS*/
+a {
+  text-decoration: none;
+  color: blue;
+}
+
+h2:hover {
+  background-color:black;
+}
+
+header a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+h1 a, h2 a, h3 a {
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h2 a:hover, h3 a:hover {
+  text-decoration: none;
+}
+
+blockquote::after, blockquote::before, q::after, q::before {
+  content: "''";
+}
+
+
+/* IMAGES */
+figure {
+  display: flex;
+  flex-flow: column;
+  border: 1px solid blue;
+  padding: 0.5em;
+  padding-bottom: 0.5em;
+  max-height: 30em;
+  max-width: 20em;
+  margin: auto;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+figcaption {
+  font-size: 0.9em;
+  text-align: center;
+  margin: 0.5em;
+}
+
+img {
+  padding: 1em;
+  max-height: 28em;
+  max-width: 18em;
+  margin: auto;
+  margin-top: 0.25em;
+}
+code {
+  font-family: monospace;
+  text-align: center;
+  font-weight: normal;
+  font-size: 1.1em;
+}
+code strong {
+  color: orange;
+}
+/* HIGHLIGHT */
+::-moz-selection, ::selection { color: white; background: blue; }
+a::selection { color: white; background: black; }
+header a::-moz-selection, header a::selection { color: white; background: black; }
+
+
+/* LISTS */
+li {
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+
+
+ol {
+  margin-left: 2em;
+  list-style-type: decimal;
+}
+ol ol {
+  margin-left: 0.5em;
+  list-style-type: lower-latin;
+}
+ol ol ol {
+  margin-left: 0.5em;
+  list-style-type: lower-roman;
+}
+
+ol  li {
+  text-align: center;
+}
+
+
+
+ul ul {
+  margin-top: 0.1em;
+  margin-left: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+/* BORDERS */
+.border {
+  border: 1px solid blue;
+  padding-left: 1em;
+}
+
+.border-bottom {
+  border: 1px solid blue;
+  padding: 1em;
+  margin-top: 1em;
+}
+
+.frontpage, .recipe {
+  border: 1px solid blue;
+  padding: 1em;
+  max-width: 20em;
+  margin: auto;
+  margin-top: 1em;
+}
+
+#toc, #appendix {
+  max-width: 22.5em;
+  margin: auto;
+}
+
+#appendix {
+  margin-top: 1.5em;
+}
+
+hr {
+  color: lightblue;
+  size: 1px;
+}
+
+/* COLUMNS */
+div.leftx {
+  float: left;
+  position: absolute;
+  border: 1px solid blue;
+  padding: 1em;
+  margin-top: 1em;
+  margin-left: 10%;
+}
+
+div.rightx {
+  float: right;
+  position: absolute;
+  margin-left: 30%;
+  border: 1px solid blue;
+  padding: 1em;
+  margin-top: 1em;
+}
+
+/* MOBILE RESPONSIVE */
+/*@media screen and (max-width: 200px) {
+  body {
+word-break: break-all;
+}
+}*/
+
+@media screen and (max-width: 400px) {
+  body {
+    font-size: 0.95em;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .frontpage, .recipe {
+    margin: auto;
+  }
+  ul.ingredients {
+    font-size: 0.85em;
+  }
+  ul {
+    list-style-type: circle;
+  }
+  subfooter {
+    margin-left: 41.5%;
+  }
+  div.recipe subfooter {
+    margin-left: 40%;
+  }
+
+}
+/* 450 - 650px
+body {
+  font-size: 1em;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+ul.ingredients {
+  font-size: 0.9em;
+}
+
+subfooter {
+  margin-left: 45.5%;
+}
+div.recipe subfooter {
+  margin-left: 41.5%;
+
+}
+*/
+
+@media screen and (min-width: 650px) {
+  ul.ingredients {
+    font-size: 0.95em;
+  }
+
+  subfooter {
+    margin-left: 45.5%;
+  }
+  div.recipe subfooter {
+    margin-left: 41.5%;
+  }
+
+}
+
+@media screen and (min-width: 55em) {
+  body {
+    margin: auto;
+    width: 100%;
+  }
+  subfooter {
+    margin-left: 46.5%;
+  }
+  div.recipe subfooter {
+    margin-left: 41.5%;
+  }
+}
